@@ -1,8 +1,8 @@
 package iteration
 
-func Repeat(character string) string {
+func Repeat(character string, number int) string {
     text := ""
-    for i:=0; i < 5; i++ {
+    for i:=0; i < number; i++ {
       text += character
     }
 
