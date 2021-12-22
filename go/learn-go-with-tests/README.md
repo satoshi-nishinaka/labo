@@ -13,3 +13,9 @@ $ go test
 ```bash
 $ go test -v
 ```
+
+### ベンチマーク計測
+```bash
+$  go test -bench=.
+```
+
