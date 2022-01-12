@@ -23,3 +23,7 @@ $ go test -v
 $  go test -bench=.
 ```
 
+### カバレッジ計測
+```bash
+$ go test -cover
+```
