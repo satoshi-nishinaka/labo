@@ -22,3 +22,7 @@ type Circle struct {
 func (c Circle) Area() float64  {
     return c.Radius * c.Radius * math.Pi
 }
+
+type Shape interface {
+    Area() float64
+}
