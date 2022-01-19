@@ -26,3 +26,6 @@ func (c Circle) Area() float64  {
 type Shape interface {
     Area() float64
 }
+
+// https://andmorefine.gitbook.io/learn-go-with-tests/go-fundamentals/structs-methods-and-interfaces#chottenaze
+// ここまで
