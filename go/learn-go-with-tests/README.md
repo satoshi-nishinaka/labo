@@ -48,3 +48,16 @@ $  go test -bench=.
 ```bash
 $ go test -cover
 ```
+
+## その他
+### エラーチェックをしてくれるLinterのインストール
+
+```bash
+$ go get -u github.com/kisielk/errcheck
+```
+
+###　errcheckの実行方法
+対象のコードが存在するディレクトリで実行
+```bash
+$ errcheck .
+```
