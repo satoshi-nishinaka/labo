@@ -23,6 +23,11 @@ $ export PATH=$PATH:$GOPATH/bin
 $ go mod init [GOPATHで最初のスラッシュを除去した状態]
 ```
 
+## ビルド
+```bash
+$ go build
+```
+
 ## Go のテストコマンド
 
 ###
