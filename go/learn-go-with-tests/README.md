@@ -71,5 +71,5 @@ $ errcheck .
 ----
 
 ### 現在の場所
-
-https://andmorefine.gitbook.io/learn-go-with-tests/build-an-application/http-server#rifakutaringu
+次はここから
+https://andmorefine.gitbook.io/learn-go-with-tests/build-an-application/http-server#sukoawosuru
