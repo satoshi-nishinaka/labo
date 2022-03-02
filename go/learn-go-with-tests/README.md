@@ -72,4 +72,4 @@ $ errcheck .
 
 ### 現在の場所
 次はここから
-https://andmorefine.gitbook.io/learn-go-with-tests/build-an-application/http-server#sukoawosuru
+https://andmorefine.gitbook.io/learn-go-with-tests/build-an-application/json#memi
