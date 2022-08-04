@@ -1,4 +1,4 @@
-# ZipArchiveの落とし穴
+# [ZipArchiveでハマってしまった件 - Qiita](https://qiita.com/satoshi-nishinaka/items/4f0dde2839c10d0833bb)
 
 ## 実行方法
 
