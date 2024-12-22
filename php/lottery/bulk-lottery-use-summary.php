@@ -23,7 +23,7 @@ class CumulativeSummary {
 
         foreach ($this->cumulative as $key => $max) {
             if ($random < $max) {
-                return "{$key} (random: {$random})";
+                return $key;
             }
         }
 
@@ -40,4 +40,23 @@ $samples = [
 ];
 
 $cs = new CumulativeSummary($samples);
-echo $cs->weightedRandomSelect() . PHP_EOL;
+
+for ($try = 0; $try < 10; $try++) {
+    $results = [];
+
+    $start = microtime(true);
+    $count = 1000000;
+    for($i = 0; $i < $count; $i++) {
+        $lottery =  $cs->weightedRandomSelect();
+        if (!isset($results[$lottery])) {
+            $results[$lottery] = 0;
+        }
+        $results[$lottery]++;
+    }
+
+    echo sprintf("%4.4f\tms\n", (microtime(true) - $start) * 1000);
+
+    foreach (array_keys($samples) as $key) {
+        echo sprintf("%s\t%d\t%4.2f\t%%\n", $key, $results[$key], $results[$key] / $count * 100);
+    }
+}
